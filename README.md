@@ -83,8 +83,8 @@
   - `:wq`: lưu và thoát 
   - `:q!`: thoát không lưu
   - `:e` + tên file: mở file khác
-  - `:vsp` + tên file: mở file bên split dọc
-  - `:sp` + tên file: mở file bên split ngang
+  - `:vsp + tên file`: mở file bên split dọc
+  - `:sp + tên file`: mở file bên split ngang
 </details>
 
 --- 
