@@ -10,10 +10,7 @@
   - `k`: ↑
   - `l`: →
   - `f + từ khóa`: đến ký tự đang có trên dòng đó
-  ---
-  - `a`: insert mode với con trỏ chuột bên phải 
-  - `i`: insert mode với con trỏ chuột bên trái 
-  - `A`: insert mode với con trỏ chuột cuối dòng 
+
   --- 
   ### Nhảy trỏ đến 
   - `w`: nhảy đến đầu từ tiếp theo
