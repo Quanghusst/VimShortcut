@@ -18,6 +18,8 @@
   - `^`: nhảy đến ký tự đầu tiên của dòng
   - `$`: nhảy đến cuối dòng 
   - `G`: nhảy đến cuối file
+  - `số + j`: nhảy xuống dòng cách số 
+  - `số + k`: nhảy lên dòng cách số 
   --- 
   ### Nhảy trỏ về
   - `b`: nhảy về đầu từ trước 
@@ -26,24 +28,29 @@
   ---
   ### Xóa 
   - `x`: xóa ký tự dưới con trỏ 
+  - `X`: xóa ký tự trước con trỏ
   - `dd`: xóa cả dòng 
   - `dw`: xóa từ hiện tại  
   - `d$`: xóa từ vị trí hiện tại đến cuối dòng  
+  - `D`: xóa từ vị trí hiện tại đến cuối dòng  
   ---
   ### Sao chép và Hoàn tác
   - `u`: hoàn tác 
   - `Ctrl + r`: làm lại thao tác vừa hoàn tác
   - `yy`: sao chép dòng hiện tại
+  - `yw`: sao chép từ hiện tại
   - `p`: dán sau con trỏ 
   - `P`: dán trước con trỏ
   ---
-  ### Tìm kiếm 
+  ### Tìm kiếm và thay thế 
   - `/từ khóa`: Tìm kiếm từ khóa xuống dưới (tức là tìm ở dưới con trỏ trước)
   - `?từ khóa`: Tìm kiếm từ khóa lên trên (tức là tìm ở trên con trỏ trước)
   - `n`: nhảy đến kết quả tiếp theo
   - `N`: nhảy đến kết quả trước
+  - `r`: thay thế ký tự tại con trỏ
+  - `cw`: thay thế từ hiện tại
+  - `cc`: thay thế cả dòng
 </details>
-
 <details> 
   <summary>Insert mode</summary>
 
@@ -90,6 +97,7 @@
 - `Ctrl + w + s`: Split ngang
 - `Ctrl + w + v`: Split dọc
 - `Ctrl + w + w`: di chuyển các màn hình 
+- `Ctrl + w + h/j/k/l`: di chuyển các màn hình 
 - `Ctrl + w + q`: Đóng cửa sổ hiện tại   
 
 --- 
@@ -97,3 +105,5 @@
 
 - `ZZ`: Lưu và thoát 
 - `ZQ`: Thoát không lưu
+- ...
+**
