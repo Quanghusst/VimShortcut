@@ -20,6 +20,7 @@
   - `G`: nhảy đến cuối file
   - `số + j`: nhảy xuống dòng cách số 
   - `số + k`: nhảy lên dòng cách số 
+  - `số + G`: nhảy đến dòng số
   --- 
   ### Nhảy trỏ về
   - `b`: nhảy về đầu từ trước 
@@ -33,6 +34,9 @@
   - `dw`: xóa từ hiện tại  
   - `d$`: xóa từ vị trí hiện tại đến cuối dòng  
   - `D`: xóa từ vị trí hiện tại đến cuối dòng  
+  - `di(`: xóa trong dấu ()
+  - `di[`: xóa trong dấu [] 
+  - `di{`: xóa trong dấu {}  
   ---
   ### Sao chép và Hoàn tác
   - `u`: hoàn tác 
@@ -42,14 +46,16 @@
   - `p`: dán sau con trỏ 
   - `P`: dán trước con trỏ
   ---
-  ### Tìm kiếm và thay thế 
+  ### Tìm kiếm 
   - `/từ khóa`: Tìm kiếm từ khóa xuống dưới (tức là tìm ở dưới con trỏ trước)
   - `?từ khóa`: Tìm kiếm từ khóa lên trên (tức là tìm ở trên con trỏ trước)
   - `n`: nhảy đến kết quả tiếp theo
   - `N`: nhảy đến kết quả trước
   - `r`: thay thế ký tự tại con trỏ
-  - `cw`: thay thế từ hiện tại
-  - `cc`: thay thế cả dòng
+  - `cw`: thay thế từ hiện tại (xóa luôn từ đó) 
+  - `cc`: thay thế cả dòng ( xóa luôn cả dòng)
+
+
 </details>
 <details> 
   <summary>Insert mode</summary>
@@ -89,6 +95,15 @@
   - `:e` + tên file: mở file khác
   - `:vsp + tên file`: mở file bên split dọc
   - `:sp + tên file`: mở file bên split ngang
+  - `:42`: nhảy đến dòng 42
+  ---
+  ### Thay thế 
+  - `:%s/old/new/g`:  Thay tất cả `old` thành `new` trong toàn file
+  - `:%s/old/new/gc`:  Thay có xác nhận từng cái (`y/n`)
+  - `:10,20s/old/new/g`:  Thay từ dòng 10 đến 20
+  - `:.s/old/new/g`:  Thay trên dòng hiện tại
+  - `:'<,'>s/old/new/g`:  Thay trong đoạn đã chọn (visual mode)
+  - `:noh`: no highlight search (xóa chế độ tìm kiếm)
 </details>
 
 --- 
